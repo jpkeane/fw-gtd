@@ -41,4 +41,19 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
   gem 'pry-rails'
+
+  gem 'fuubar'
+  gem 'rspec-rails', '~> 3.5'
+
+  gem 'factory_girl_rails'
+  gem 'faker'
+end
+
+group :test do
+  # Coverage
+  gem 'coveralls', require: false
+
+  # Testing frameworks
+  gem 'capybara'
+  gem 'shoulda-matchers', '~> 3.1'
 end
